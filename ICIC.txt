@@ -1,0 +1,19 @@
+18004194000 - toll free
+
+33667777 - status of credit card (ISD)
+
+
+public static  Node insert(Node head,int data){
+    
+    if(head == null)
+        return new Node( data);
+    
+    if(head.next == null){
+            head.next = new Node(data);
+        }
+    else{
+        insert(head.next,data);
+    }
+
+    return head;
+}

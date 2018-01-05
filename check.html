@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Demo: Number object comparison</h1>
+	
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	<p id="p5"></p>
+	
+	<script>
+		var num1 = new Number(100);
+		var num2 = new Number(100);
+		var num3 = 100;
+
+		document.getElementById("p1").innerHTML = num1 == num2;
+		document.getElementById("p2").innerHTML = num1 == num3; 
+		document.getElementById("p3").innerHTML = num1 === num2;
+		document.getElementById("p4").innerHTML = typeof(num1);
+		document.getElementById("p5").innerHTML = typeof(num3);
+    </script>
+</body>
+</html>
